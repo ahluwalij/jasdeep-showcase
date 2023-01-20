@@ -1,7 +1,7 @@
-import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 import * as React from 'react';
 
-import Button from '@/components/buttons/Button';
+import TextButton from '@/components/buttons/TextButton';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
 const links = [
@@ -10,19 +10,9 @@ const links = [
 ];
 
 export default function Header() {
-  const [mode, setMode] = React.useState<'dark' | 'light'>('light');
-
-  function toggleMode() {
-    return mode === 'dark' ? setMode('light') : setMode('dark');
-  }
-
+  const { theme, setTheme } = useTheme();
   return (
-    <header
-      className={clsx(
-        'sticky top-0 z-50',
-        mode === 'dark' ? 'bg-dark' : 'bg-white'
-      )}
-    >
+    <header className='z-5 sticky top-0 bg-white dark:bg-dark'>
       <div className='layout flex h-14 items-center justify-between'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           Home
@@ -36,12 +26,11 @@ export default function Header() {
                 </UnstyledLink>
               </li>
             ))}
-            <Button
-              onClick={toggleMode}
-              variant={mode === 'dark' ? 'light' : 'dark'}
+            <TextButton
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
-              Set to {mode === 'dark' ? 'light' : 'dark'}
-            </Button>
+              {theme === 'dark' ? 'light' : 'dark'}
+            </TextButton>
           </ul>
         </nav>
       </div>

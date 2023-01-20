@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import Button from '@/components/buttons/Button';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
 const links = [
@@ -9,12 +8,6 @@ const links = [
 ];
 
 export default function Footer() {
-  const [mode, setMode] = React.useState<'dark' | 'light'>('light');
-
-  function toggleMode() {
-    return mode === 'dark' ? setMode('light') : setMode('dark');
-  }
-
   return (
     <footer>
       <div className='layout flex h-14 items-center justify-between border-t'>
@@ -30,12 +23,6 @@ export default function Footer() {
                 </UnstyledLink>
               </li>
             ))}
-            <Button
-              onClick={toggleMode}
-              variant={mode === 'dark' ? 'light' : 'dark'}
-            >
-              Set to {mode === 'dark' ? 'light' : 'dark'}
-            </Button>
           </ul>
         </nav>
       </div>

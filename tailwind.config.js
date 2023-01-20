@@ -5,7 +5,15 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    typography: (_theme) => ({}),
     extend: {
+      typography: (_theme) => ({
+        dark: {
+          css: {
+            color: 'white',
+          },
+        },
+      }),
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
@@ -52,5 +60,9 @@ module.exports = {
       },
     },
   },
+  variants: {
+    typography: ['dark'],
+  },
   plugins: [require('@tailwindcss/forms')],
+  darkMode: 'class',
 };

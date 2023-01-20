@@ -14,17 +14,17 @@ export default function Landing() {
       <Seo templateTitle='Home' />
 
       <main>
-        <section className='bg-white'>
+        <section className='bg-white dark:bg-dark'>
           <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
             <Vercel className='text-5xl' />
             <h1 className='mt-4'>
               Next.js + Tailwind CSS + TypeScript Starter
             </h1>
-            <p className='mt-2 text-sm text-gray-800'>
+            <p className='prose dark:prose-dark mt-2 text-sm'>
               A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
               Import, Seo, Link component, pre-configured with Husky{' '}
             </p>
-            <p className='mt-2 text-sm text-gray-700'>
+            <p className='prose dark:prose-dark mt-2 text-sm'>
               <ArrowLink href='https://github.com/ahluwalij/portfolio-by-jazz'>
                 See the repository
               </ArrowLink>
