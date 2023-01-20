@@ -43,13 +43,16 @@ export default function HomePage() {
               See all components
             </ButtonLink>
 
-            <UnstyledLink href='https://vercel.com/' className='mt-4'>
+            <UnstyledLink
+              href='https://vercel.com/ahluwalij/portfolio-by-jazz'
+              className='mt-4'
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 width='92'
                 height='32'
                 src='https://vercel.com/button'
-                alt='Deploy with Vercel'
+                alt='View on Vercel'
               />
             </UnstyledLink>
 
