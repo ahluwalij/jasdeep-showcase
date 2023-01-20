@@ -35,7 +35,7 @@ export default function HomePage() {
             </p>
             <p className='mt-2 text-sm text-gray-700'>
               <ArrowLink href='https://github.com/ahluwalij/portfolio-by-jazz'>
-                See the repository
+                See the repositorys
               </ArrowLink>
             </p>
 
