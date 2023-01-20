@@ -10,7 +10,7 @@ import '@/styles/globals.css';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute='class'>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }

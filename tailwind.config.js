@@ -5,21 +5,13 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    typography: (_theme) => ({}),
     extend: {
-      typography: (_theme) => ({
-        dark: {
-          css: {
-            color: 'white',
-          },
-        },
-      }),
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
       colors: {
         primary: {
-          // Customize it on globals.css :root
+          DEFAULT: 'rgb(var(--tw-color-primary-400) / <alpha-value>)',
           50: 'rgb(var(--tw-color-primary-50) / <alpha-value>)',
           100: 'rgb(var(--tw-color-primary-100) / <alpha-value>)',
           200: 'rgb(var(--tw-color-primary-200) / <alpha-value>)',

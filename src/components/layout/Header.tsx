@@ -10,11 +10,19 @@ const links = [
 ];
 
 export default function Header() {
+  //* In order to properly hydrate the page, we need to wait until
+  //* the UI is mounted on the client
+  // eslint-disable-next-line unused-imports/no-unused-vars
+  const [mounted, setMounted] = React.useState(false);
   const { theme, setTheme } = useTheme();
+
+  React.useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
-    <header className='z-5 sticky top-0 bg-white dark:bg-dark'>
+    <header className='sticky top-0 z-10 bg-white dark:bg-dark'>
       <div className='layout flex h-14 items-center justify-between'>
-        <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
+        <UnstyledLink href='/' className='font-bold hover:text-primary'>
           Home
         </UnstyledLink>
         <nav>
