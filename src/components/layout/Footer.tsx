@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import * as React from 'react';
 
 import Button from '@/components/buttons/Button';
@@ -9,7 +8,7 @@ const links = [
   { href: '/', label: 'Route 2' },
 ];
 
-export default function Header() {
+export default function Footer() {
   const [mode, setMode] = React.useState<'dark' | 'light'>('light');
 
   function toggleMode() {
@@ -17,13 +16,8 @@ export default function Header() {
   }
 
   return (
-    <header
-      className={clsx(
-        'sticky top-0 z-50',
-        mode === 'dark' ? 'bg-dark' : 'bg-white'
-      )}
-    >
-      <div className='layout flex h-14 items-center justify-between'>
+    <footer>
+      <div className='layout flex h-14 items-center justify-between border-t'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           Home
         </UnstyledLink>
@@ -45,6 +39,6 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-    </header>
+    </footer>
   );
 }

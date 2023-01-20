@@ -1,4 +1,3 @@
-// !STARTERCONF You can delete this page
 import clsx from 'clsx';
 import * as React from 'react';
 import {
@@ -63,7 +62,6 @@ export default function ComponentsPage() {
               >
                 Set to {mode === 'dark' ? 'light' : 'dark'}
               </Button>
-              {/* <Button onClick={randomize}>Randomize CSS Variable</Button> */}
             </div>
 
             <ol className='mt-8 space-y-6'>
