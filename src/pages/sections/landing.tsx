@@ -20,11 +20,11 @@ export default function Landing() {
             <h1 className='mt-4'>
               Next.js + Tailwind CSS + TypeScript Starter
             </h1>
-            <p className='prose dark:prose-dark mt-2 text-sm'>
+            <p className='prose mt-2 text-sm'>
               A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
               Import, Seo, Link component, pre-configured with Husky{' '}
             </p>
-            <p className='prose dark:prose-dark mt-2 text-sm'>
+            <p className='prose mt-2 text-sm'>
               <ArrowLink href='https://github.com/ahluwalij/portfolio-by-jazz'>
                 See the repository
               </ArrowLink>
