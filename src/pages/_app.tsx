@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   React.useEffect(() => setMounted(true), []);
   if (!mounted) return null;
+
   return (
     <ThemeProvider attribute='class'>
       <Component {...pageProps} />

@@ -12,13 +12,13 @@ export default function Landing() {
       <Seo templateTitle='Home' />
 
       <main>
-        <section className='bg-white dark:bg-dark'>
-          <div className='layout relative flex min-h-screen flex-col items-start justify-start py-12 text-center'>
-            <h1 className='flex min-h-[192px] flex-col items-start text-5xl font-bold md:text-7xl lg:text-8xl'>
+        <section className='bg-white transition-all dark:bg-dark'>
+          <div className='layout relative flex min-h-screen flex-col items-start justify-start py-6 text-center  sm:py-8 md:py-10 lg:py-12'>
+            <h1 className='flex min-h-[192px]  flex-col items-start text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl lg:text-8xl'>
               <div>Jasdeep</div>
               <div>Ahluwalia</div>
             </h1>
-            <h2 className='prose mt-2 flex items-start text-left text-xl dark:prose-invert md:text-3xl'>
+            <h2 className='prose mt-2 flex max-w-screen-sm items-start text-left text-2xl font-semibold leading-normal tracking-wide dark:prose-invert sm:text-4xl'>
               Fullstack Developer and with a passion for developing amazing
               things for amazing people.
             </h2>

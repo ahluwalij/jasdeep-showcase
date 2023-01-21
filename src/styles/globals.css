@@ -40,6 +40,10 @@
       U+2215, U+FEFF, U+FFFD;
   }
 
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .cursor-newtab {
     cursor: url('/images/new-tab.png') 10 10, pointer;
   }
@@ -79,7 +83,7 @@
     /* 1280px */
     max-width: 80rem;
 
-    @apply mx-auto w-11/12;
+    @apply mx-auto w-5/6;
   }
 
   .bg-dark a.custom-link {
