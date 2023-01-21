@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
   return (
@@ -11,6 +12,7 @@ export default function Document() {
           type='font/woff2'
           crossOrigin='anonymous'
         />
+        <Script src='/theme.js' strategy='beforeInteractive' />
       </Head>
       <body>
         <Main />
