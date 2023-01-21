@@ -16,6 +16,10 @@ export default function Landing() {
       setVantaEffect(
         NET({
           el: vantaRef.current,
+          color: 0xd27d2d,
+          points: 9.0,
+          maxDistance: 16.0,
+          spacing: 20.0,
           backgroundAlpha: 0,
           THREE,
         })
@@ -30,7 +34,7 @@ export default function Landing() {
       <Seo templateTitle='Home' />
       <main>
         <section
-          className='bg-white transition-all dark:bg-dark'
+          className='min-h-fit bg-white transition-all dark:bg-dark'
           ref={vantaRef}
         >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start py-6 text-center  sm:py-8 md:py-10 lg:py-12'>
@@ -43,6 +47,21 @@ export default function Landing() {
               things for amazing people.
             </h2>
 
+            <ButtonLink className='mt-6' href='/components' variant='light'>
+              See all components
+            </ButtonLink>
+            <ButtonLink className='mt-6' href='/components' variant='light'>
+              See all components
+            </ButtonLink>
+            <ButtonLink className='mt-6' href='/components' variant='light'>
+              See all components
+            </ButtonLink>
+            <ButtonLink className='mt-6' href='/components' variant='light'>
+              See all components
+            </ButtonLink>
+            <ButtonLink className='mt-6' href='/components' variant='light'>
+              See all components
+            </ButtonLink>
             <ButtonLink className='mt-6' href='/components' variant='light'>
               See all components
             </ButtonLink>
