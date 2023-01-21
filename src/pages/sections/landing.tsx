@@ -6,8 +6,6 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
-import Vercel from '~/svg/Vercel.svg';
-
 export default function Landing() {
   return (
     <>
@@ -15,23 +13,15 @@ export default function Landing() {
 
       <main>
         <section className='bg-white dark:bg-dark'>
-          <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-            <Vercel className='text-5xl' />
-
-            <div className='prose dark:prose-invert'>
-              <h1 className='mt-4'>
-                Next.js + Tailwind CSS + TypeScript Starter
-              </h1>
-              <p className='mt-2'>
-                A starter for Next.js, Tailwind CSS, and TypeScript with
-                Absolute Import, Seo, Link component, pre-configured with Husky{' '}
-              </p>
-              <p className='mt-2 text-sm'>
-                <ArrowLink href='https://github.com/ahluwalij/portfolio-by-jazz'>
-                  See the repository
-                </ArrowLink>
-              </p>
-            </div>
+          <div className='layout relative flex min-h-screen flex-col items-start justify-start py-12 text-center'>
+            <h1 className='flex min-h-[192px] flex-col items-start text-5xl font-bold md:text-7xl lg:text-8xl'>
+              <div>Jasdeep</div>
+              <div>Ahluwalia</div>
+            </h1>
+            <h2 className='prose mt-2 flex items-start text-left text-xl dark:prose-invert md:text-3xl'>
+              Fullstack Developer and with a passion for developing amazing
+              things for amazing people.
+            </h2>
 
             <ButtonLink className='mt-6' href='/components' variant='light'>
               See all components
@@ -50,11 +40,16 @@ export default function Landing() {
               />
             </UnstyledLink>
 
-            <footer className='absolute bottom-2 text-gray-700'>
+            <footer className='absolute bottom-2 flex items-end gap-2 text-gray-700'>
               © {new Date().getFullYear()} By{' '}
               <UnderlineLink href='https://jasdeepahluwalia.com'>
                 Jasdeep Ahluwalia
               </UnderlineLink>
+              <p className='mt-2 text-sm'>
+                <ArrowLink href='https://github.com/ahluwalij/portfolio-by-jazz'>
+                  See the repository
+                </ArrowLink>
+              </p>
             </footer>
           </div>
         </section>

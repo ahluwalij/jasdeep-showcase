@@ -78,6 +78,7 @@
   .layout {
     /* 1280px */
     max-width: 80rem;
+
     @apply mx-auto w-11/12;
   }
 
