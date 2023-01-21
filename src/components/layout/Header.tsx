@@ -12,11 +12,7 @@ export default function Header() {
   //* In order to properly hydrate the page, we need to wait until
   //* the UI is mounted on the client
   // eslint-disable-next-line unused-imports/no-unused-vars
-  const [mounted, setMounted] = React.useState(false);
   const { theme, setTheme } = useTheme();
-
-  React.useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
 
   return (
     <header className='fixed top-0 z-10 w-full bg-transparent'>

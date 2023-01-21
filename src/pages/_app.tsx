@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
+import React from 'react';
 
 import '@/styles/globals.css';
 
@@ -8,6 +9,10 @@ import '@/styles/globals.css';
  */
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
   return (
     <ThemeProvider attribute='class'>
       <Component {...pageProps} />
