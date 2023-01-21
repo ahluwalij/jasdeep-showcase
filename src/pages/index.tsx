@@ -8,7 +8,6 @@ export default function Index() {
   return (
     <Layout>
       <Landing />
-      <Landing />
     </Layout>
   );
 }

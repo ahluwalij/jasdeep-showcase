@@ -1,6 +1,7 @@
 import { useTheme } from 'next-themes';
 import * as React from 'react';
-import { HiMoon, HiSun } from 'react-icons/hi';
+import { HiMoon } from 'react-icons/hi';
+import { RiLightbulbFlashLine } from 'react-icons/ri';
 
 import IconButton from '@/components/buttons/IconButton';
 import TextButton from '@/components/buttons/TextButton';
@@ -22,9 +23,13 @@ export default function DarkModeButton() {
       }
     >
       <div className='text-2xl'>
-        <IconButton className='hidden dark:flex' variant='ghost' icon={HiSun} />
         <IconButton
-          className='flex dark:hidden'
+          className='hidden animate-flicker text-white dark:flex'
+          variant='ghost'
+          icon={RiLightbulbFlashLine}
+        />
+        <IconButton
+          className='flex animate-shimmer dark:hidden'
           variant='ghost'
           icon={HiMoon}
         />

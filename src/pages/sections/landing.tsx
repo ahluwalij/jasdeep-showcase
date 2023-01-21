@@ -1,4 +1,6 @@
 import * as React from 'react';
+import * as THREE from 'three';
+import NET from 'vanta/dist/vanta.net.min';
 
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
@@ -7,18 +9,36 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
 export default function Landing() {
+  const [vantaEffect, setVantaEffect] = React.useState(0);
+  const vantaRef = React.useRef(null);
+  React.useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        NET({
+          el: vantaRef.current,
+          backgroundAlpha: 0,
+          THREE,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) setVantaEffect(0);
+    };
+  }, [vantaEffect]);
   return (
     <>
       <Seo templateTitle='Home' />
-
       <main>
-        <section className='bg-white transition-all dark:bg-dark'>
+        <section
+          className='bg-white transition-all dark:bg-dark'
+          ref={vantaRef}
+        >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start py-6 text-center  sm:py-8 md:py-10 lg:py-12'>
-            <h1 className='flex min-h-[192px]  flex-col items-start text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl lg:text-8xl'>
+            <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
               <div>Jasdeep</div>
               <div>Ahluwalia</div>
             </h1>
-            <h2 className='prose mt-2 flex max-w-screen-sm items-start text-left text-2xl font-semibold leading-normal tracking-wide dark:prose-invert sm:text-4xl'>
+            <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-normal tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-96'>
               Fullstack Developer and with a passion for developing amazing
               things for amazing people.
             </h2>

@@ -11,7 +11,7 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: 'rgb(var(--tw-color-primary-400) / <alpha-value>)',
+          DEFAULT: 'rgb(var(--tw-color-primary-500) / <alpha-value>)',
           50: 'rgb(var(--tw-color-primary-50) / <alpha-value>)',
           100: 'rgb(var(--tw-color-primary-100) / <alpha-value>)',
           200: 'rgb(var(--tw-color-primary-200) / <alpha-value>)',
@@ -23,7 +23,7 @@ module.exports = {
           800: 'rgb(var(--tw-color-primary-800) / <alpha-value>)',
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
-        dark: '#222222',
+        dark: '#111111',
       },
       keyframes: {
         flicker: {
