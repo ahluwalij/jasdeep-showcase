@@ -18,7 +18,7 @@ export default function Landing() {
           el: vantaRef.current,
           color: 0xd27d2d,
           points: 9.0,
-          maxDistance: 16.0,
+          maxDistance: 15.0,
           spacing: 20.0,
           backgroundAlpha: 0,
           THREE,
@@ -42,7 +42,7 @@ export default function Landing() {
               <div>Jasdeep</div>
               <div>Ahluwalia</div>
             </h1>
-            <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-normal tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-96'>
+            <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-normal tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
               Fullstack Developer and with a passion for developing amazing
               things for amazing people.
             </h2>
