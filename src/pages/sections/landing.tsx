@@ -3,9 +3,7 @@ import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 
 import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
 export default function Landing() {
@@ -25,59 +23,80 @@ export default function Landing() {
         })
       );
     }
-    return () => {
-      if (vantaEffect) setVantaEffect(0);
-    };
   }, [vantaEffect]);
+
   return (
     <>
       <Seo templateTitle='Home' />
       <main>
         <section
-          className='min-h-fit bg-white transition-all dark:bg-dark'
+          className='min-h-fit bg-white transition-all dark:bg-dark '
           ref={vantaRef}
         >
-          <div className='layout relative flex min-h-screen flex-col items-start justify-start py-6 text-center  sm:py-8 md:py-10 lg:py-12'>
+          <div className='layout relative flex min-h-screen flex-col items-start justify-start py-6 text-center sm:py-8 md:py-10 lg:py-12'>
             <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
               <div>Jasdeep</div>
               <div>Ahluwalia</div>
             </h1>
-            <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-normal tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
-              Fullstack Developer and with a passion for developing amazing
-              things for amazing people.
+            <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-10 tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
+              Fullstack Developer with a passion for developing amazing things
+              for amazing people.
             </h2>
 
-            <ButtonLink className='mt-6' href='/components' variant='light'>
+            {/* <ButtonLink className='mt-6' href='/components' variant='light'>
               See all components
-            </ButtonLink>
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
+            </ButtonLink> */}
 
-            <UnstyledLink
-              href='https://vercel.com/ahluwalij/portfolio-by-jazz'
-              className='mt-4'
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                width='92'
-                height='32'
-                src='https://vercel.com/button'
-                alt='View on Vercel'
-              />
-            </UnstyledLink>
+            <div className='mt-12 flex w-full flex-col'>
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-4xl font-semibold dark:prose-invert sm:text-5xl'
+                    href='https://beta.sellerchain.com'
+                  >
+                    Sellerchain
+                  </UnderlineLink>
+                </div>
+                <div className='prose w-5/6 pt-12 text-left dark:prose-invert md:w-2/5'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Labore necessitatibus repellendus maxime quisquam
+                  reprehenderit nobis voluptas adipisci asperiores deserunt
+                  repellat.
+                </div>
+              </div>
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-4xl font-semibold dark:prose-invert sm:text-5xl'
+                    href='https://beta.sellerchain.com'
+                  >
+                    Sellerchain
+                  </UnderlineLink>
+                </div>
+                <div className='prose w-5/6 pt-12 text-left dark:prose-invert md:w-2/5'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Labore necessitatibus repellendus maxime quisquam
+                  reprehenderit nobis voluptas adipisci asperiores deserunt
+                  repellat.
+                </div>
+              </div>
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-4xl font-semibold dark:prose-invert sm:text-5xl'
+                    href='https://beta.sellerchain.com'
+                  >
+                    Sellerchain
+                  </UnderlineLink>
+                </div>
+                <div className='prose w-5/6 pt-12 text-left dark:prose-invert md:w-2/5'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Labore necessitatibus repellendus maxime quisquam
+                  reprehenderit nobis voluptas adipisci asperiores deserunt
+                  repellat.
+                </div>
+              </div>
+            </div>
 
             <footer className='absolute bottom-2 flex items-end gap-2 text-gray-700'>
               © {new Date().getFullYear()} By{' '}

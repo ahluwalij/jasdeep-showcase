@@ -48,6 +48,10 @@
     cursor: url('/images/new-tab.png') 10 10, pointer;
   }
 
+  .pane {
+    @apply flex w-full flex-col items-center justify-center border-b bg-primary-800/5 py-12 backdrop-blur-sm transition-all first:rounded-t-[7.5vw] last:rounded-b-[7.5vw] last:border-b-0 dark:border-primary-300/5 dark:bg-primary-300/5 md:flex-row;
+  }
+
   /* #region  /**=========== Typography =========== */
   .h0 {
     @apply font-primary text-3xl font-bold md:text-5xl;
