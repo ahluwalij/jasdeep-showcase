@@ -72,12 +72,21 @@ export default function Landing() {
                   >
                     Sellerchain
                   </UnderlineLink>
+                  <br />
+                  <h1 className='prose prose-2xl mt-2 text-3xl dark:prose-invert sm:text-4xl'>
+                    2021-2022
+                  </h1>
                 </div>
-                <div className='prose w-5/6 pt-12 text-left dark:prose-invert md:w-2/5'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore necessitatibus repellendus maxime quisquam
-                  reprehenderit nobis voluptas adipisci asperiores deserunt
-                  repellat.
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iure provident corrupti ad explicabo sint, recusandae
+                    tenetur commodi consectetur hic veritatis officiis sunt quis
+                    aspernatur eius porro! Libero, quis voluptas incidunt
+                    voluptatum quas commodi odio sapiente minus, quaerat
+                    molestias quibusdam ab neque voluptates! Ullam suscipit nisi
+                    tempore ab culpa nam dolor!
+                  </p>
                 </div>
               </div>
               <div className='pane'>
