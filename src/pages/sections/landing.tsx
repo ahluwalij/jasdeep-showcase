@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 
+import Footer from '@/components/layout/Footer';
 import ArrowLink from '@/components/links/ArrowLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
@@ -33,7 +34,7 @@ export default function Landing() {
           className='min-h-fit bg-white transition-all dark:bg-dark'
           ref={vantaRef}
         >
-          <div className='layout relative flex min-h-screen flex-col items-start justify-start py-6 text-center sm:py-8 md:py-10 lg:py-12'>
+          <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12'>
             <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
               <div>Jasdeep</div>
               <div>Ahluwalia</div>
@@ -129,7 +130,7 @@ export default function Landing() {
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
-                      href='https://www.jasdeepahluwalia.com/experience/sellerchain'
+                      href='https://www.jasdeepahluwalia.com/experience/proxyfarm'
                     >
                       Learn More
                     </ArrowLink>
@@ -175,7 +176,7 @@ export default function Landing() {
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
-                      href='https://www.jasdeepahluwalia.com/experience/sellerchain'
+                      href='https://www.jasdeepahluwalia.com/projects/hash'
                     >
                       Learn More
                     </ArrowLink>
@@ -217,24 +218,13 @@ export default function Landing() {
                       className='text-sm'
                       href='https://www.jasdeepahluwalia.com/experience/sellerchain'
                     >
-                      Learn More
+                      See the repository
                     </ArrowLink>
                   </div>
                 </div>
               </div>
             </div>
-
-            <footer className='absolute bottom-2 flex items-end gap-2 text-gray-700'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://jasdeepahluwalia.com'>
-                Jasdeep Ahluwalia
-              </UnderlineLink>
-              <p className='mt-2 text-sm'>
-                <ArrowLink href='https://github.com/ahluwalij/portfolio-by-jazz'>
-                  See the repository
-                </ArrowLink>
-              </p>
-            </footer>
+            <Footer />
           </div>
         </section>
       </main>
