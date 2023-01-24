@@ -111,6 +111,7 @@
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
+    text-decoration: none;
   }
   @media (prefers-reduced-motion: no-preference) {
     .animated-underline {
