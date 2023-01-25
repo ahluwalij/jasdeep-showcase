@@ -43,7 +43,7 @@ export default function Landing() {
       <main>
         <section
           className={clsx(
-            'min-h-fit bg-white transition-all delay-200 duration-200 dark:bg-dark',
+            'min-h-fit bg-white transition-all duration-200 dark:bg-dark',
             fade ? 'opacity-100' : 'opacity-0'
           )}
           ref={vantaRef}
