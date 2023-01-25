@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import * as React from 'react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
@@ -24,25 +25,43 @@ export default function Landing() {
         })
       );
     }
+    handleMenuClick();
   }, [vantaEffect]);
+
+  // eslint-disable-next-line unused-imports/no-unused-vars
+  const [popCard, setPopCard] = React.useState('hidden');
+  const [fade, setFade] = React.useState(false);
+
+  const handleMenuClick = () => {
+    setPopCard('inline-block');
+    setFade(true);
+  };
 
   return (
     <>
       <Seo templateTitle='Home' />
       <main>
         <section
-          className='min-h-fit bg-white transition-all dark:bg-dark'
+          className={clsx(
+            'min-h-fit bg-white transition-all duration-1000 dark:bg-dark',
+            fade ? 'opacity-100' : 'opacity-0'
+          )}
           ref={vantaRef}
         >
-          <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12'>
-            <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
-              <div>Jasdeep</div>
-              <div>Ahluwalia</div>
-            </h1>
-            <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-10 tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
-              Fullstack Developer with a passion for developing amazing things
-              for amazing people.
-            </h2>
+          <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12 '>
+            <div
+              className='relative block translate-y-12 transform text-6xl font-black transition-all duration-500 ease-out'
+              data-replace='{ "translate-y-12": "translate-y-0" }'
+            >
+              <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
+                <div>Jasdeep</div>
+                <div>Ahluwalia</div>
+              </h1>
+              <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-10 tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
+                Fullstack Developer with a passion for developing amazing things
+                for amazing people.
+              </h2>
+            </div>
 
             {/* <ButtonLink className='mt-6' href='/components' variant='light'>
               See all components
@@ -216,7 +235,7 @@ export default function Landing() {
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
-                      href='https://www.jasdeepahluwalia.com/experience/sellerchain'
+                      href='https://github.com/ahluwalij/AlgoTrader'
                     >
                       See the repository
                     </ArrowLink>
