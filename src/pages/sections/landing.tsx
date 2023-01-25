@@ -67,12 +67,12 @@ export default function Landing() {
               See all components
             </ButtonLink> */}
 
-            <div className='mt-12 flex w-full flex-col'>
+            <div className='mt-36 flex w-full flex-col'>
               {/* SELLERCHAIN PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-5xl font-semibold dark:prose-invert'
+                    className='prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
                     href='https://beta.sellerchain.com'
                   >
                     Sellerchain
@@ -115,7 +115,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-5xl font-semibold dark:prose-invert'
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
                     href='https://proxy-farm.com'
                   >
                     Proxyfarm
@@ -129,7 +129,7 @@ export default function Landing() {
                   <p>
                     Premium proxy service that utilized advanced configurations
                     of Squid Proxy.
-                    <ul>
+                    <div className='ml-6'>
                       <li>
                         Utilized MongoDB to handle proxies and customer orders
                         on an online storefront made with React Redux and
@@ -144,7 +144,7 @@ export default function Landing() {
                         forwarding, Traffic Filtering, User:Pass authentication,
                         Log Storage and Deletion, Residential IP pool.
                       </li>
-                    </ul>
+                    </div>
                   </p>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
@@ -160,7 +160,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-5xl font-semibold dark:prose-invert'
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
                     href='https://www.youtube.com/watch?v=v_RfGE2vPys'
                   >
                     Hash
@@ -174,7 +174,7 @@ export default function Landing() {
                   <p>
                     Electron framework built blockchain minting bot focused
                     primarily on Ethereum and Solana.
-                    <ul>
+                    <div className='ml-6'>
                       <li>
                         Developed a multi-platform app through Electron-Forge,
                         with a fully on-chain authentication system.
@@ -190,7 +190,7 @@ export default function Landing() {
                         utilized AWS S3 for storing token metadata.
                       </li>
                       <li>Successful Alpha Period with over 50 users.</li>
-                    </ul>
+                    </div>
                   </p>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
@@ -206,7 +206,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-5xl font-semibold dark:prose-invert'
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
                     href='https://github.com/ahluwalij/AlgoTrader'
                   >
                     AlgoTrader
@@ -221,7 +221,7 @@ export default function Landing() {
                     Created a Python script to automatically buy and sell
                     Perpetual Contracts based on both famous and custom
                     algorithms.
-                    <ul>
+                    <div className='ml-6'>
                       <li>
                         Built an API to integrate the script into any market
                         chart service.
@@ -230,7 +230,7 @@ export default function Landing() {
                         Created with Python, Pandas, CCXT, TradingView API, and
                         Flask
                       </li>
-                    </ul>
+                    </div>
                   </p>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
