@@ -72,7 +72,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
                     href='https://beta.sellerchain.com'
                   >
                     Sellerchain
