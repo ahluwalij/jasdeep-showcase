@@ -65,12 +65,12 @@ export default function Landing() {
                     source code
                   </UnderlineLink>
                   on my{' '}
-                  <UnderlineLink
+                  <ArrowLink
                     className='font-bold text-slate-700 dark:text-gray-300'
                     href='https://github.com/ahluwalij'
                   >
                     GitHub
-                  </UnderlineLink>
+                  </ArrowLink>
                 </h3>
               </h1>
 
