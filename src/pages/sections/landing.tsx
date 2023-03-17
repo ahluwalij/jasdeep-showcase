@@ -43,7 +43,7 @@ export default function Landing() {
       <main>
         <section
           className={clsx(
-            'min-h-fit bg-white transition-all dark:bg-dark',
+            'bg-white transition-all dark:bg-dark',
             fade ? 'opacity-100' : 'opacity-0'
           )}
           ref={vantaRef}
@@ -56,7 +56,24 @@ export default function Landing() {
               <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
                 <div>Jasdeep</div>
                 <div>Ahluwalia</div>
+                <h3 className='text-md flex items-start gap-1 md:text-lg'>
+                  How did I make this? Check out the{' '}
+                  <UnderlineLink
+                    className='font-bold text-slate-700 dark:text-gray-300'
+                    href='https://github.com/ahluwalij/portfolio-by-jazz'
+                  >
+                    source code
+                  </UnderlineLink>
+                  on my{' '}
+                  <UnderlineLink
+                    className='font-bold text-slate-700 dark:text-gray-300'
+                    href='https://github.com/ahluwalij'
+                  >
+                    GitHub
+                  </UnderlineLink>
+                </h3>
               </h1>
+
               <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-10 tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
                 Fullstack Developer with a passion for developing amazing things
                 for amazing people.
@@ -83,7 +100,7 @@ export default function Landing() {
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
-                  <p>
+                  <h6>
                     Helped revamp existing and new applications into modern,
                     scalable projects to merchants and developer partners.
                     Proposed, wrote technical designs, documented, and
@@ -100,7 +117,7 @@ export default function Landing() {
                     with a design and other development teams to efficiently
                     provide a great user experience.
                     <br />
-                  </p>
+                  </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
@@ -126,7 +143,7 @@ export default function Landing() {
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
-                  <p>
+                  <h6>
                     Premium proxy service that utilized advanced configurations
                     of Squid Proxy.
                     <div className='ml-6'>
@@ -145,7 +162,7 @@ export default function Landing() {
                         Log Storage and Deletion, Residential IP pool.
                       </li>
                     </div>
-                  </p>
+                  </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
@@ -171,7 +188,7 @@ export default function Landing() {
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
-                  <p>
+                  <h6>
                     Electron framework built blockchain minting bot focused
                     primarily on Ethereum and Solana.
                     <div className='ml-6'>
@@ -191,7 +208,7 @@ export default function Landing() {
                       </li>
                       <li>Successful Alpha Period with over 50 users.</li>
                     </div>
-                  </p>
+                  </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
@@ -217,7 +234,7 @@ export default function Landing() {
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
-                  <p>
+                  <h6>
                     Created a Python script to automatically buy and sell
                     Perpetual Contracts based on both famous and custom
                     algorithms.
@@ -231,7 +248,7 @@ export default function Landing() {
                         Flask
                       </li>
                     </div>
-                  </p>
+                  </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'

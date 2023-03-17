@@ -4,7 +4,6 @@ import { HiMoon } from 'react-icons/hi';
 import { RiLightbulbFlashLine } from 'react-icons/ri';
 
 import IconButton from '@/components/buttons/IconButton';
-import TextButton from '@/components/buttons/TextButton';
 
 export default function DarkModeButton() {
   //* In order to properly hydrate the page, we need to wait until
@@ -13,7 +12,7 @@ export default function DarkModeButton() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <TextButton
+    <div
       onClick={() =>
         setTheme(
           document.querySelector('html')?.classList.contains('dark')
@@ -34,6 +33,6 @@ export default function DarkModeButton() {
           icon={HiMoon}
         />
       </div>
-    </TextButton>
+    </div>
   );
 }
