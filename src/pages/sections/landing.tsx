@@ -60,7 +60,7 @@ export default function Landing() {
                   How did I make this? Check out the{' '}
                   <UnderlineLink
                     className='font-bold text-slate-700 dark:text-gray-300'
-                    href='https://github.com/ahluwalij/portfolio-by-jazz'
+                    href='https://github.com/ahluwalij/jasdeep-showcase'
                   >
                     source code
                   </UnderlineLink>
