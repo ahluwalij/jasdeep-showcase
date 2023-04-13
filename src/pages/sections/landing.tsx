@@ -56,21 +56,24 @@ export default function Landing() {
               <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
                 <div>Jasdeep</div>
                 <div>Ahluwalia</div>
-                <h3 className='text-md flex items-start gap-1 md:text-lg'>
-                  How did I make this? Check out the{' '}
-                  <UnderlineLink
-                    className='font-bold text-slate-700 dark:text-gray-300'
-                    href='https://github.com/ahluwalij/jasdeep-showcase'
-                  >
-                    source code
-                  </UnderlineLink>
-                  on my{' '}
-                  <ArrowLink
-                    className='font-bold text-slate-700 dark:text-gray-300'
-                    href='https://github.com/ahluwalij'
-                  >
-                    GitHub
-                  </ArrowLink>
+                <h3 className='text-md flex flex-col items-start gap-1 md:text-lg lg:flex-row'>
+                  <h3>How did I make this?</h3>
+                  <h3>
+                    Check out the{' '}
+                    <UnderlineLink
+                      className='font-bold text-slate-700 dark:text-gray-300'
+                      href='https://github.com/ahluwalij/jasdeep-showcase'
+                    >
+                      source code
+                    </UnderlineLink>{' '}
+                    on my{' '}
+                    <ArrowLink
+                      className='font-bold text-slate-700 dark:text-gray-300'
+                      href='https://github.com/ahluwalij'
+                    >
+                      GitHub
+                    </ArrowLink>
+                  </h3>
                 </h3>
               </h1>
 
