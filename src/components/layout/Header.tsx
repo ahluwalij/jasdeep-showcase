@@ -24,7 +24,7 @@ export default function Header() {
             <PrimaryLink
               className={clsx(
                 'hidden dark:text-[#FAD5A5]',
-                router.pathname == '/education' ? 'block' : ''
+                router.pathname != '/' ? 'block' : ''
               )}
               href='/'
             >
@@ -33,7 +33,16 @@ export default function Header() {
             <PrimaryLink
               className={clsx(
                 'hidden dark:text-[#FAD5A5]',
-                router.pathname == '/' ? 'block' : ''
+                router.pathname != '/work' ? 'block' : ''
+              )}
+              href='/work'
+            >
+              Work
+            </PrimaryLink>
+            <PrimaryLink
+              className={clsx(
+                'hidden dark:text-[#FAD5A5]',
+                router.pathname != '/education' ? 'block' : ''
               )}
               href='/education'
             >

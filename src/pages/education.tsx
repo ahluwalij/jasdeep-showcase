@@ -8,7 +8,7 @@ import Layout from '@/components/layout/Layout';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
-export default function Landing() {
+export default function Education() {
   const [vantaEffect, setVantaEffect] = React.useState(0);
   const vantaRef = React.useRef(null);
   React.useEffect(() => {
@@ -66,8 +66,9 @@ export default function Landing() {
                     UMD College Park
                   </UnderlineLink>
                   <br />
-                  <h1 className='prose prose-xl mt-4 text-xl dark:prose-invert md:text-3xl'>
-                    August 2021 - December 2024
+                  <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-3xl'>
+                    <div>BA in Computer Science</div>
+                    <div>August 2021 - December 2024</div>
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
