@@ -27,7 +27,7 @@
     "react-icons": "^4.7.1",
     "react-scrollmagic": "^2.3.0",
     "tailwind-merge": "^1.8.1",
-    "three": "^0.148.0",
+    "three": "^0.135.0",
     "vanta": "^0.5.24"
   },
   "devDependencies": {
