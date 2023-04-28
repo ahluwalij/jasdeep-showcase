@@ -98,8 +98,9 @@ export default function Landing() {
                     Sellerchain
                   </UnderlineLink>
                   <br />
-                  <h1 className='prose prose-xl mt-4 text-xl dark:prose-invert md:text-3xl'>
-                    June 2022 - August 2022
+                  <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-2xl'>
+                    <div>Fullstack Developer Intern</div>
+                    <div>June 2022 - August 2022</div>
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
@@ -108,25 +109,57 @@ export default function Landing() {
                     scalable projects to merchants and developer partners.
                     Proposed, wrote technical designs, documented, and
                     implemented various platform features and components for the
-                    distributed UI toolkit. Successfully shipped a redesign of
-                    the{' '}
-                    <UnderlineLink
-                      className='leading-7'
-                      href='https://shipmentmakerpro.com'
-                    >
-                      Shipment Maker Pro
-                    </UnderlineLink>{' '}
-                    website navigation following Material UI convention. Worked
-                    with a design and other development teams to efficiently
-                    provide a great user experience.
-                    <br />
+                    distributed UI toolkit.
+                    <div className='ml-6'>
+                      <li>
+                        Successfully shipped a redesign of the{' '}
+                        <UnderlineLink
+                          className='leading-7'
+                          href='https://shipmentmakerpro.com'
+                        >
+                          Shipment Maker Pro
+                        </UnderlineLink>{' '}
+                        website navigation following Material UI convention.
+                        Worked with a design and other development teams to
+                        efficiently provide a great user experience.
+                      </li>
+                      <li>
+                        Led the fullstack development on an Angular .NET core
+                        app, working closely with a team of senior developers
+                        and product managers to ensure smooth and efficient
+                        development
+                      </li>
+                      <li>
+                        Designed and implemented efficient SQL Server database
+                        solutions, enhancing app functionality by optimizing
+                        data storage and retrieval.
+                      </li>
+                      <li>
+                        Employed Modular Programming, Material Design, Angular
+                        14, Git, and best practices to build a cutting-edge .NET
+                        core app, contributing to the company’s overall product
+                        suite and client satisfaction.
+                      </li>
+                      <li>
+                        Maintained proactive communication with the startup’s
+                        CEO, asset teams, and fellow developers for rapid and
+                        efficient progress, consistently meeting project
+                        milestones and delivering high-quality code.
+                      </li>
+                      <li>
+                        Actively participated in Agile development processes,
+                        including daily stand-ups, sprint planning, and
+                        retrospec- tives, ensuring seamless team collaboration
+                        and timely project completion
+                      </li>
+                    </div>
                   </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
-                      href='https://www.jasdeepahluwalia.com/experience/sellerchain'
+                      href='https://www.jasdeepahluwalia.com/files/sellerchain_recommendation'
                     >
-                      Learn More
+                      CEO Recommendation
                     </ArrowLink>
                   </div>
                 </div>
@@ -141,14 +174,16 @@ export default function Landing() {
                     Proxyfarm
                   </UnderlineLink>
                   <br />
-                  <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
-                    January 2021 - August 2021
+                  <h1 className='prose prose-xl mt-2 flex flex-col text-xl dark:prose-invert md:text-2xl'>
+                    <div>Lead Developer</div>
+                    <div>January 2021 - August 2021</div>
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
                   <h6>
-                    Premium proxy service that utilized advanced configurations
-                    of Squid Proxy.
+                    Founded and developed a startup offering a scalable and
+                    high-performance proxy service for web scraping, SEO tools,
+                    and secure browsing.
                     <div className='ml-6'>
                       <li>
                         Utilized MongoDB to handle proxies and customer orders
@@ -156,13 +191,24 @@ export default function Landing() {
                         Stripe.
                       </li>
                       <li>
-                        Developed a user dashboard on our website, Worked with
-                        IP providers locally and internationally.
+                        Acquired IP addresses from multiple international
+                        providers, ensuring a diverse pool of proxies from
+                        around the world and minimizing service downtime
                       </li>
                       <li>
-                        Set up and automated Squid Proxy Servers: IP masking, IP
-                        forwarding, Traffic Filtering, User:Pass authentication,
-                        Log Storage and Deletion, Residential IP pool.
+                        Implemented a user-friendly web interface using HTML,
+                        CSS, and JavaScript, allowing clients to manage their
+                        subscriptions and access their proxy credentials.
+                      </li>
+                      <li>
+                        Managed business aspects, including marketing, sales,
+                        and customer support, leading to a growing client base
+                        and positive feedback
+                      </li>
+                      <li>
+                        Ensured legal compliance with data privacy regulations
+                        and usage policies, protecting both clients and the
+                        company.
                       </li>
                     </div>
                   </h6>
@@ -176,6 +222,57 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
+              {/* THE BOT TRADE PANE */}
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    href='https://twitter.com/TheBotTrade'
+                  >
+                    The Bot Trade
+                  </UnderlineLink>
+                  <br />
+                  <h1 className='prose prose-xl mt-2 flex flex-col text-xl dark:prose-invert md:text-3xl'>
+                    <div>Administrator</div>
+                    <div>January 2021 - September 2021</div>
+                  </h1>
+                </div>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                  <h6>
+                    Consulted for a leading software trading and cryptocurrency
+                    advisory firm, providing expert guidance to clients on
+                    investment strategies, market trends, and risk management.
+                    <div className='ml-6'>
+                      <li>
+                        Assessed client needs and delivered strategic investment
+                        recommendations for development company ventures,
+                        contributing to the success and growth of multiple
+                        startups.
+                      </li>
+                      <li>
+                        Directed a high-performing team of 10+ employees,
+                        optimizing payroll and monitoring productivity to
+                        achieve maximum efficiency and ensure consistent
+                        delivery of expert advice to clients.
+                      </li>
+                      <li>
+                        Established relationships with creators to create
+                        partnerships, driving member engagement and fostering
+                        long-term business growth through collaboration and
+                        resource sharing.
+                      </li>
+                    </div>
+                  </h6>
+                  <div className='flex w-full justify-end'>
+                    <ArrowLink
+                      className='text-sm'
+                      href='https://twitter.com/TheBotTrade'
+                    >
+                      Learn More
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
               {/* HASH PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
@@ -183,7 +280,7 @@ export default function Landing() {
                     className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
                     href='https://www.youtube.com/watch?v=v_RfGE2vPys'
                   >
-                    Hash
+                    Hash Automation
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
@@ -192,24 +289,30 @@ export default function Landing() {
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
                   <h6>
-                    Electron framework built blockchain minting bot focused
-                    primarily on Ethereum and Solana.
+                    Implemented algorithms that optimizes the minting process in
+                    an Ethereum & Solana bot, automating the process for users
+                    and reducing the time and effort required for successful
+                    minting.
                     <div className='ml-6'>
                       <li>
                         Developed a multi-platform app through Electron-Forge,
                         with a fully on-chain authentication system.
                       </li>
                       <li>
-                        Built the frontend using using React, TailwindCSS,
-                        Electron.
+                        Integrated AWS S3 a fully on-chain authentication system
+                        to secure user data across Mac, Windows, and Linux,
+                        ensuring a high level of security and privacy for users.
                       </li>
                       <li>
-                        Utilized Asarmor and Bytenode for App Security and Code
-                        Obfuscation - Stored Persistent and Non-Persistent app
-                        data for saving account login and app configurations and
-                        utilized AWS S3 for storing token metadata.
+                        Crafted an aesthetic and intuitive frontend using React
+                        and TailwindCSS, enhancing user experience and
+                        increasing user engagement.
                       </li>
-                      <li>Successful Alpha Period with over 50 users.</li>
+                      <li>
+                        Led a successful alpha period with over 50 users,
+                        gathering valuable feedback for improvements and feature
+                        enhancements.
+                      </li>
                     </div>
                   </h6>
                   <div className='flex w-full justify-end'>
@@ -218,6 +321,94 @@ export default function Landing() {
                       href='https://www.jasdeepahluwalia.com/projects/hash'
                     >
                       Learn More
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
+              {/* PLATEPLAN PANE */}
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    href='https://www.plateplan.xyz/'
+                  >
+                    PlatePlan
+                  </UnderlineLink>
+                  <br />
+                  <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
+                    April 2023
+                  </h1>
+                </div>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                  <h6>
+                    Developed a React-based website with Redux for state
+                    management to generate personalized meal plans based on
+                    user's food preferences and schedule.
+                    <div className='ml-6'>
+                      <li>
+                        Integrated Spoonacular's API using JavaScript to access
+                        recipes and nutritional information; leveraged caching
+                        for recent meals to reduce API calls and improve load
+                        times.
+                      </li>
+                      <li>
+                        Designed a RESTful backend server using Python and
+                        Django, enabling user authentication and persistent
+                        storage of saved foods in an online database.
+                      </li>
+                      <li>
+                        Styled the website using HTML and CSS, adhering to
+                        responsive design principles.
+                      </li>
+                    </div>
+                  </h6>
+                  <div className='flex w-full justify-end'>
+                    <ArrowLink
+                      className='text-sm'
+                      href='https://github.com/ahluwalij/plateplan'
+                    >
+                      See the repository
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
+              {/* REGEX ENGINE PANE */}
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <div className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'>
+                    RegEx Engine
+                  </div>
+                  <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
+                    March 2023
+                  </h1>
+                </div>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                  <h6>
+                    Developed a Regular Expression (RegEx) Engine using OCaml,
+                    leveraging Non-deterministic Finite Automaton (NFA) for
+                    efficient parsing and matching.
+                    <div className='ml-6'>
+                      <li>
+                        Implemented core regex operations such as concatenation,
+                        alternation (union), and Kleene star.
+                      </li>
+                      <li>
+                        Utilized sets for efficient NFA state management and
+                        optimized performance.
+                      </li>
+                      <li>
+                        Managed build process using Dune and provided
+                        comprehensive documentation for easy integration into
+                        other projects.
+                      </li>
+                    </div>
+                  </h6>
+                  <div className='flex w-full justify-end'>
+                    <ArrowLink
+                      className='text-sm'
+                      href='https://github.com/ahluwalij/RegEx-Engine'
+                    >
+                      See the repository
                     </ArrowLink>
                   </div>
                 </div>
@@ -233,7 +424,7 @@ export default function Landing() {
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
-                    January 2023
+                    December 2022 - January 2023
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
@@ -243,12 +434,14 @@ export default function Landing() {
                     algorithms.
                     <div className='ml-6'>
                       <li>
-                        Built an API to integrate the script into any market
-                        chart service.
+                        Employed Numpy and Pandas to analyze 5 years of stock
+                        and cryptocurrency data, extracting valuable insights
+                        and identifying profitable trading patterns.
                       </li>
                       <li>
-                        Created with Python, Pandas, CCXT, TradingView API, and
-                        Flask
+                        Built a Flask API for seamless integration into market
+                        chart services, enabling users to visualize data and
+                        make informed decisions.
                       </li>
                     </div>
                   </h6>
