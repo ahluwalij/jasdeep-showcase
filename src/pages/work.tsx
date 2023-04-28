@@ -50,7 +50,7 @@ export default function Work() {
           ref={vantaRef}
         >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12 '>
-            <div className='mt-36 flex w-full flex-col'>
+            <div className='mt-16 flex w-full flex-col'>
               {/* SELLERCHAIN PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>

@@ -48,6 +48,15 @@ export default function Header() {
             >
               Education
             </PrimaryLink>
+            <PrimaryLink
+              className={clsx(
+                'hidden dark:text-[#FAD5A5]',
+                router.pathname != '/projects' ? 'block' : ''
+              )}
+              href='/projects'
+            >
+              Projects
+            </PrimaryLink>
             <DarkModeButton />
           </ul>
         </nav>
