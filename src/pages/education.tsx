@@ -146,7 +146,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose w-fit text-left text-[1.8rem] font-semibold leading-10 dark:prose-invert sm:text-4xl md:text-5xl lg:hidden'
+                    className='leading-1 prose w-min text-left text-[1.8rem] font-semibold leading-10 dark:prose-invert sm:text-4xl md:text-5xl lg:hidden'
                     href='https://ei.jhu.edu/programs/bmei-online/'
                   >
                     Johns Hopkins BMEI

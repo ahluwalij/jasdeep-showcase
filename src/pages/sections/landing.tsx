@@ -56,7 +56,7 @@ export default function Landing() {
               <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
                 <div>Jasdeep</div>
                 <div>Ahluwalia</div>
-                <h3 className='text-md flex flex-col items-start gap-1 md:text-lg lg:flex-row'>
+                <h3 className='text-md flex flex-col items-start gap-1 text-left md:text-lg lg:flex-row'>
                   <h3>How did I make this?</h3>
                   <h3>
                     Check out the{' '}
@@ -226,7 +226,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert max-[393px]:w-min sm:text-5xl'
                     href='https://twitter.com/TheBotTrade'
                   >
                     The Bot Trade
@@ -277,7 +277,7 @@ export default function Landing() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert max-[365px]:w-min sm:text-5xl'
                     href='https://www.youtube.com/watch?v=v_RfGE2vPys'
                   >
                     Hash Automation
@@ -416,13 +416,9 @@ export default function Landing() {
               {/* ALGOTRADER PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
-                  <UnderlineLink
-                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
-                    href='https://github.com/ahluwalij/AlgoTrader'
-                  >
+                  <div className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'>
                     AlgoTrader
-                  </UnderlineLink>
-                  <br />
+                  </div>
                   <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
                     December 2022 - January 2023
                   </h1>
