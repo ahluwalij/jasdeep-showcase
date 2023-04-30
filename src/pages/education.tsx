@@ -67,7 +67,7 @@ export default function Education() {
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-3xl'>
-                    <div>BA in Computer Science</div>
+                    <div>BS in Computer Science</div>
                     <div>August 2021 - December 2024</div>
                   </h1>
                 </div>
