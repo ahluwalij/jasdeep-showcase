@@ -28,6 +28,22 @@ export default function Document() {
           crossOrigin='anonymous'
         />
         <Script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js' />
+        <div className='container'>
+          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          <Script
+            src='https://www.googletagmanager.com/gtag/js?id=G-E0XCDPSL1T'
+            strategy='afterInteractive'
+          />
+          <Script id='google-analytics' strategy='afterInteractive'>
+            {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-E0XCDPSL1T');
+        `}
+          </Script>
+        </div>
       </Head>
       <body>
         <Main />
