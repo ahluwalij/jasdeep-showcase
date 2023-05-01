@@ -61,25 +61,28 @@ export default function Landing() {
               <h1 className='flex min-h-[192px] flex-col items-start font-bold tracking-normal text-primary dark:text-[#FAD5A5] max-[640px]:text-6xl max-[400px]:text-5xl sm:text-7xl md:text-8xl'>
                 <div>Jasdeep</div>
                 <div>Ahluwalia</div>
-                <h3 className='text-md flex flex-col items-start gap-1 text-left md:text-lg lg:flex-row'>
-                  <h3>How did I make this?</h3>
-                  <h3>
-                    Check out the{' '}
-                    <UnderlineLink
-                      className='font-bold text-slate-700 dark:text-gray-300'
-                      href='https://github.com/ahluwalij/jasdeep-showcase'
-                    >
-                      source code
-                    </UnderlineLink>{' '}
-                    on my{' '}
-                    <ArrowLink
-                      className='font-bold text-slate-700 dark:text-gray-300'
-                      href='https://github.com/ahluwalij'
-                    >
-                      GitHub
-                    </ArrowLink>
-                  </h3>
-                </h3>
+                <div className='text-md flex flex-col items-start gap-1 text-left md:text-lg'>
+                  <div className='flex flex-col gap-1 lg:flex-row'>
+                    <h3>How did I make this?</h3>
+                    <h3>
+                      Check out the{' '}
+                      <UnderlineLink
+                        className='font-bold text-slate-700 dark:text-gray-300'
+                        href='https://github.com/ahluwalij/jasdeep-showcase'
+                      >
+                        source code
+                      </UnderlineLink>{' '}
+                      on my{' '}
+                      <ArrowLink
+                        className='font-bold text-slate-700 dark:text-gray-300'
+                        href='https://github.com/ahluwalij'
+                      >
+                        GitHub
+                      </ArrowLink>
+                    </h3>
+                  </div>
+                  <h3>Over 300 people did too!</h3>
+                </div>
               </h1>
 
               {/* <h2 className='prose flex max-w-screen-sm items-start text-left text-3xl font-semibold leading-10 tracking-wide dark:prose-invert max-[768px]:mt-60 max-[700px]:mt-52 max-[500px]:mt-44 max-[436px]:mt-32 max-[390px]:mt-12 sm:text-4xl md:mt-72 xl:mt-[27.5rem]'>
