@@ -21,6 +21,8 @@ export default function Education() {
           maxDistance: 15.0,
           spacing: 20.0,
           backgroundAlpha: 0,
+          scale: 2.0,
+          scaleMobile: 2.0,
           THREE,
         })
       );

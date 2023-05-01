@@ -16,11 +16,16 @@ export default function Landing() {
       setVantaEffect(
         NET({
           el: vantaRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
           color: 0xd27d2d,
           points: 9.0,
           maxDistance: 15.0,
           spacing: 20.0,
           backgroundAlpha: 0,
+          scale: 1.0,
+          scaleMobile: 1.0,
           THREE,
         })
       );
