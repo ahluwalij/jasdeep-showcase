@@ -42,35 +42,35 @@ export default function Landing() {
     setFade(true);
   };
   //
-  async function getRepoClones(): Promise<number> {
-    const url =
-      'https://api.github.com/repos/ahluwalij/jasdeep-showcase/traffic/clones';
-    const headers = new Headers({
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-      'X-GitHub-Api-Version': '2022-11-28',
-    });
+  // async function getRepoClones(): Promise<number> {
+  //   const url =
+  //     'https://api.github.com/repos/ahluwalij/jasdeep-showcase/traffic/clones';
+  //   const headers = new Headers({
+  //     Accept: 'application/vnd.github+json',
+  //     Authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+  //     'X-GitHub-Api-Version': '2022-11-28',
+  //   });
 
-    try {
-      const response = await fetch(url, { method: 'GET', headers });
+  //   try {
+  //     const response = await fetch(url, { method: 'GET', headers });
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! status: ${response.status}`);
+  //     }
 
-      const data = await response.json();
-      return data.count;
-    } catch (error) {
-      // console.error('Error fetching repository clones:', error);
-      return 0;
-    }
-  }
+  //     const data = await response.json();
+  //     return data.count;
+  //   } catch (error) {
+  //     // console.error('Error fetching repository clones:', error);
+  //     return 0;
+  //   }
+  // }
 
-  getRepoClones().then((clones) => {
-    const clonesEl = document.getElementById('clones');
-    if (clonesEl != null) clonesEl.innerHTML = clones.toString();
-    // console.log(`Number of clones: ${clones}`);
-  });
+  // getRepoClones().then((clones) => {
+  //   const clonesEl = document.getElementById('clones');
+  //   if (clonesEl != null) clonesEl.innerHTML = clones.toString();
+  //   // console.log(`Number of clones: ${clones}`);
+  // });
 
   return (
     <>
@@ -111,7 +111,7 @@ export default function Landing() {
                       </ArrowLink>
                     </h3>
                   </div>
-                  <h3 className='flex flex-wrap gap-1'>
+                  {/* <h3 className='flex flex-wrap gap-1'>
                     With
                     <div
                       id='clones'
@@ -127,7 +127,7 @@ export default function Landing() {
                       ...
                     </div>
                     views in the last 14 days
-                  </h3>
+                  </h3> */}
                 </div>
               </h1>
 
