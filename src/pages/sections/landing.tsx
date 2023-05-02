@@ -111,7 +111,7 @@ export default function Landing() {
                       </ArrowLink>
                     </h3>
                   </div>
-                  <h3 className='flex gap-1'>
+                  <h3 className='flex flex-wrap gap-1'>
                     With
                     <div
                       id='clones'
