@@ -8,7 +8,7 @@ export default function Footer() {
       <div className='flex w-full justify-center gap-4 leading-4'>
         <div>
           © {new Date().getFullYear()} By{' '}
-          <UnderlineLink href='https://jasdeepahluwalia.com'>
+          <UnderlineLink href='https://www.linkedin.com/in/jasdeep-ahluwalia/'>
             Jasdeep Ahluwalia
           </UnderlineLink>
         </div>
