@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div>
           Check out my old{' '}
-          <UnderlineLink href='https://jasdeepahluwalia.com'>
+          <UnderlineLink href='https://jasdeep.vercel.app/'>
             website
           </UnderlineLink>
         </div>
