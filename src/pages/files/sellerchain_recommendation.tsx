@@ -1,27 +1,32 @@
+import { Worker } from '@react-pdf-viewer/core';
+import { Viewer } from '@react-pdf-viewer/core';
 import * as React from 'react';
 
-import PrimaryLink from '@/components/links/PrimaryLink';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+
+import ButtonLink from '@/components/links/ButtonLink';
+import Seo from '@/components/Seo';
+
+<Viewer fileUrl='../assets/Jasdeep_Ahluwalia_Sellerchain_Recommendation.pdf' />;
 
 export default function Resume() {
   return (
-    <div className='h-fit overflow-visible'>
-      <object
-        data='../assets/Jasdeep_Ahluwalia_Sellerchain_Recommendation.pdf'
-        type='application/pdf'
-        width='100%'
-        height='100%'
-        className='h-screen'
-      >
-        <div className='flex h-screen items-center justify-center text-center'>
-          <div>
-            It seems like my PDF recommendation isn't loading for you(most
-            likely mobile). However, feel free to go through my{' '}
-            <PrimaryLink href='/work'>Work Experience</PrimaryLink> and my{' '}
-            <PrimaryLink href='/projects'>Projects</PrimaryLink> so you can
-            still get to know me!
-          </div>
+    <main>
+      <Seo templateTitle='Resume' />
+      <header className='fixed top-0 z-10 w-full bg-transparent'>
+        <div className='flex h-14 items-center justify-end pr-4'>
+          <nav>
+            <ul className='flex items-center justify-between space-x-4'>
+              <ButtonLink variant='dark' href='/'>
+                Home
+              </ButtonLink>
+            </ul>
+          </nav>
         </div>
-      </object>
-    </div>
+      </header>
+      <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
+        <Viewer fileUrl='../assets/Jasdeep_Ahluwalia_Sellerchain_Recommendation.pdf' />
+      </Worker>
+    </main>
   );
 }
