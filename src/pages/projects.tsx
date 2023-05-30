@@ -53,21 +53,21 @@ export default function Work() {
         >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12 '>
             <div className='mt-16 flex w-full flex-col'>
-              {/* PLATEPLAN PANE */}
+              {/* PLATEPLANNEr PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
                     className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
-                    href='https://www.plateplan.xyz/'
+                    href='https://www.plateplanner.org/'
                   >
-                    PlatePlan
+                    PlatePlanner
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
                     April 2023
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Developed a React-based website with Redux for state
                     management to generate personalized meal plans based on
@@ -93,7 +93,7 @@ export default function Work() {
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
-                      href='https://github.com/ahluwalij/plateplan'
+                      href='https://github.com/ahluwalij/plateplanner-meal-generator'
                     >
                       See the repository
                     </ArrowLink>
@@ -114,7 +114,7 @@ export default function Work() {
                     January 2022 - May 2022
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Implemented algorithms that optimizes the minting process in
                     an Ethereum & Solana bot, automating the process for users
@@ -162,7 +162,7 @@ export default function Work() {
                     March 2023
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Developed a Regular Expression (RegEx) Engine using OCaml,
                     leveraging Non-deterministic Finite Automaton (NFA) for
@@ -203,7 +203,7 @@ export default function Work() {
                     December 2022 - January 2023
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Created a Python script to automatically buy and sell
                     Perpetual Contracts based on both famous and custom

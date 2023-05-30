@@ -24,7 +24,7 @@ export default function Resume() {
           </nav>
         </div>
       </header>
-      <div className='py-10'>
+      <div className='bg-white py-10'>
         <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
           <Viewer fileUrl='../assets/Jasdeep_Ahluwalia_Sellerchain_Recommendation.pdf' />
         </Worker>
