@@ -9,10 +9,10 @@ import Seo from '@/components/Seo';
 
 <Viewer fileUrl='../../assets/Moneyball_Project.pdf' />;
 
-export default function Resume() {
+export default function Moneyball_Project() {
   return (
     <main>
-      <Seo templateTitle='Resume' />
+      <Seo templateTitle='Moneyball Project' />
       <header className='fixed top-0 z-10 w-full bg-transparent'>
         <div className='flex h-14 items-center justify-end pr-4'>
           <nav>

@@ -9,10 +9,10 @@ import Seo from '@/components/Seo';
 
 <Viewer fileUrl='../../assets/CO2_Emission_Project.pdf' />;
 
-export default function Resume() {
+export default function CO2_Emission() {
   return (
     <main>
-      <Seo templateTitle='Resume' />
+      <Seo templateTitle='Emissions Project' />
       <header className='fixed top-0 z-10 w-full bg-transparent'>
         <div className='flex h-14 items-center justify-end pr-4'>
           <nav>
