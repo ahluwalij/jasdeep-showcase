@@ -57,6 +57,15 @@ export default function Header() {
             >
               Projects
             </PrimaryLink>
+            <PrimaryLink
+              className={clsx(
+                'hidden dark:text-[#FAD5A5]',
+                router.pathname != '/aiml' ? 'block' : ''
+              )}
+              href='/aiml'
+            >
+              AI/ML
+            </PrimaryLink>
             <DarkModeButton />
           </ul>
         </nav>

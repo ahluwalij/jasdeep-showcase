@@ -9,7 +9,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
-export default function Work() {
+export default function Projects() {
   const [vantaEffect, setVantaEffect] = React.useState(0);
   const vantaRef = React.useRef(null);
   React.useEffect(() => {
@@ -53,7 +53,7 @@ export default function Work() {
         >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12 '>
             <div className='mt-16 flex w-full flex-col'>
-              {/* PLATEPLANNEr PANE */}
+              {/* PLATEPLANNER PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
@@ -64,7 +64,7 @@ export default function Work() {
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
-                    April 2023
+                    May 2023
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
@@ -74,19 +74,19 @@ export default function Work() {
                     user's food preferences and schedule.
                     <div className='ml-6'>
                       <li>
-                        Integrated Spoonacular's API using JavaScript to access
-                        recipes and nutritional information; leveraged caching
-                        for recent meals to reduce API calls and improve load
-                        times.
+                        Integrated multiple APIs to access recipe and nutrition
+                        databases, implementing caching to optimize load times
+                        and reduce API calls.
                       </li>
                       <li>
-                        Designed a RESTful backend server using Python and
-                        Django, enabling user authentication and persistent
-                        storage of saved foods in an online database.
+                        Engineered a RESTful backend server & relational
+                        database using Django and MySQL, enabling users to log
+                        in and store favorited meals.
                       </li>
                       <li>
-                        Styled the website using HTML and CSS, adhering to
-                        responsive design principles.
+                        Utilized a modern tech stack including JavaScript,
+                        React, Python, SQL, HTML, CSS, Git, and Redux to create
+                        a user-friendly experience.
                       </li>
                     </div>
                   </h6>
@@ -116,28 +116,27 @@ export default function Work() {
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
-                    Implemented algorithms that optimizes the minting process in
-                    an Ethereum & Solana bot, automating the process for users
-                    and reducing the time and effort required for successful
-                    minting.
+                    Developed and launched an Ethereum NFT bot that employs deep
+                    learning models (RNNs) to predict if you should cancel your
+                    transaction.
                     <div className='ml-6'>
                       <li>
-                        Developed a multi-platform app through Electron-Forge,
-                        with a fully on-chain authentication system.
+                        Utilized Apache Spark to process real-time transactions
+                        in parallel, significantly improving the overall speed
+                        of monitoring.
                       </li>
                       <li>
-                        Integrated AWS S3 a fully on-chain authentication system
-                        to secure user data across Mac, Windows, and Linux,
-                        ensuring a high level of security and privacy for users.
+                        Integrated AWS S3 and an on-chain authentication system,
+                        resulting in no security breaches during the alpha
+                        period with over 50 users.
                       </li>
                       <li>
-                        Crafted an aesthetic and intuitive frontend using React
-                        and TailwindCSS, enhancing user experience and
-                        increasing user engagement.
+                        Leveraged React, Electron, and TailwindCSS to develop a
+                        desktop app that is Mac, Windows, and Linux compatible.
                       </li>
                       <li>
-                        Led a successful alpha period with over 50 users,
-                        gathering valuable feedback for improvements and feature
+                        Led a successful 2 month alpha period, gathering
+                        valuable feedback for improvements and feature
                         enhancements.
                       </li>
                     </div>
