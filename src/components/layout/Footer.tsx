@@ -13,10 +13,12 @@ export default function Footer() {
           </UnderlineLink>
         </div>
         <div>
-          Check out my old{' '}
           <UnderlineLink href='https://jasdeep.vercel.app/'>
-            website
+            Old website
           </UnderlineLink>
+        </div>
+        <div>
+          <UnderlineLink href='/files/resume'>Resume</UnderlineLink>
         </div>
       </div>
     </footer>
