@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div>
           <UnderlineLink href='https://jasdeep.vercel.app/'>
-            Old website
+            Old Website
           </UnderlineLink>
         </div>
         <div>
