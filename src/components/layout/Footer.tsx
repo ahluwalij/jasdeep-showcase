@@ -9,14 +9,24 @@ export default function Footer() {
         <div>
           © {new Date().getFullYear()} By{' '}
           <UnderlineLink href='https://www.linkedin.com/in/jasdeep-ahluwalia/'>
-            Jasdeep Ahluwalia
+            Jasdeep Ahluwalia.
           </UnderlineLink>
         </div>
         <div>
+          <UnderlineLink href='https://www.linkedin.com/in/jasdeep-ahluwalia/'>
+            LinkedIn
+          </UnderlineLink>
+        </div>
+        <div>
+          <UnderlineLink href='https://github.com/ahluwalij'>
+            GitHub
+          </UnderlineLink>
+        </div>
+        {/* <div>
           <UnderlineLink href='https://jasdeep.vercel.app/'>
             Old Website
           </UnderlineLink>
-        </div>
+        </div> */}
         <div>
           <UnderlineLink href='/files/resume'>Resume</UnderlineLink>
         </div>
