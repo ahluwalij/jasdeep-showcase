@@ -157,10 +157,10 @@ export default function Education() {
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
-                    Engineered a machine learning based CNN to
-                    detect/distinguish between malicious malaria strains/cells
-                    in images using Python, Tensorflow, Keras, Seaborn, Neural
-                    Networks, and Google Collab.
+                    Engineered a CNN to detect/distinguish between malicious
+                    malaria strains/cells in images using Python, Tensorflow,
+                    Keras, Seaborn, Neural Networks, Computer Vision, and Google
+                    Colab.
                     <div className='ml-6'>
                       <li>
                         Trained neural network against a dataset of 100,000
@@ -168,13 +168,13 @@ export default function Education() {
                       </li>
                       <li>
                         Collaborated with a multidisciplinary team to optimize
-                        the CNN's performance and accuracy, achieving a 95%
+                        the CNN's performance and accuracy, achieving a 85%
                         success rate in identifying malaria strains.
                       </li>
                       <li>
                         Presented research findings to faculty and fellow
                         students, sparking interest in further development and
-                        collab- oration.
+                        collaboration.
                       </li>
                     </div>
                   </h6>

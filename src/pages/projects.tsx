@@ -74,9 +74,9 @@ export default function Projects() {
                     user's food preferences and schedule.
                     <div className='ml-6'>
                       <li>
-                        Integrated multiple APIs to access recipe and nutrition
-                        databases, implementing caching to optimize load times
-                        and reduce API calls.
+                        Integrated multiple APIs to access 365,000 recipes and
+                        nutrition databases, implementing caching to optimize
+                        load times and reduce API calls.
                       </li>
                       <li>
                         Engineered a RESTful backend server & relational
@@ -85,8 +85,9 @@ export default function Projects() {
                       </li>
                       <li>
                         Utilized a modern tech stack including JavaScript,
-                        React, Python, SQL, HTML, CSS, Git, and Redux to create
-                        a user-friendly experience.
+                        React, Python, SQL, JavaScript, HTML, CSS, MySQL,
+                        Django, Git, and Redux to create a user-friendly
+                        experience.
                       </li>
                     </div>
                   </h6>
@@ -116,26 +117,26 @@ export default function Projects() {
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
-                    Developed and launched an Ethereum NFT bot that employs deep
-                    learning models (RNNs) to predict if you should cancel your
+                    Developed and launched an Ethereum NFT bot that employs
+                    Logistic Regression to predict if you should cancel your
                     transaction.
                     <div className='ml-6'>
                       <li>
-                        Utilized Apache Spark to process real-time transactions
+                        Utilized Apache Kafka to process real-time transactions
                         in parallel, significantly improving the overall speed
-                        of monitoring.
+                        of blockchain monitoring.
                       </li>
                       <li>
                         Integrated AWS S3 and an on-chain authentication system,
                         resulting in no security breaches during the alpha
-                        period with over 50 users.
+                        period with over 140 users.
                       </li>
                       <li>
                         Leveraged React, Electron, and TailwindCSS to develop a
                         desktop app that is Mac, Windows, and Linux compatible.
                       </li>
                       <li>
-                        Led a successful 2 month alpha period, gathering
+                        Led a successful 8 month alpha period, gathering
                         valuable feedback for improvements and feature
                         enhancements.
                       </li>

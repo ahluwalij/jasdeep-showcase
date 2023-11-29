@@ -121,11 +121,13 @@ export default function Work() {
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Helped revamp existing and new applications into modern,
-                    scalable projects to merchants and developer partners.
-                    Proposed, wrote technical designs, documented, and
-                    implemented various platform features and components for the
-                    distributed UI toolkit.
+                    scalable projects for Amazon merchants and developers.
                     <div className='ml-6'>
+                      <li>
+                        Proposed and optimized an ML algorithm for Amazon
+                        shipments, and integrated it into current backend
+                        systems.
+                      </li>
                       <li>
                         Successfully shipped a redesign of the{' '}
                         <UnderlineLink
@@ -134,29 +136,25 @@ export default function Work() {
                         >
                           Shipment Maker Pro
                         </UnderlineLink>{' '}
-                        website navigation following Material UI convention.
-                        Worked with a design and other development teams to
-                        efficiently provide a great user experience.
+                        website to Angular Material. Collaborated with a design
+                        team to efficiently provide a great user experience.
                       </li>
                       <li>
-                        Led the fullstack development on an Angular .NET core
-                        app, working closely with a team of senior developers
-                        and product managers to ensure smooth and efficient
-                        development
+                        Achieved 3x speed up in shipment calculation using
+                        Reinforcement Learning for optimal warehouse routing.
                       </li>
                       <li>
-                        Designed and implemented efficient SQL Server database
-                        solutions, enhancing app functionality by optimizing
-                        data storage and retrieval.
+                        Reduced costs by $400+/mo by transitioning a large
+                        PostGreSQL shipment database from local to AWS RDS.
                       </li>
                       <li>
                         Employed Modular Programming, Material Design, Angular
                         14, Git, and best practices to build a cutting-edge .NET
-                        core app, contributing to the company’s overall product
+                        core app, contributing to the company's overall product
                         suite and client satisfaction.
                       </li>
                       <li>
-                        Maintained proactive communication with the startup’s
+                        Maintained proactive communication with the startup's
                         CEO, asset teams, and fellow developers for rapid and
                         efficient progress, consistently meeting project
                         milestones and delivering high-quality code.
@@ -190,7 +188,7 @@ export default function Work() {
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-2 flex flex-col text-xl dark:prose-invert md:text-2xl'>
-                    <div>Lead Developer</div>
+                    <div>Founding Engineer</div>
                     <div>January 2021 - August 2021</div>
                   </h1>
                 </div>
@@ -201,29 +199,28 @@ export default function Work() {
                     and secure browsing.
                     <div className='ml-6'>
                       <li>
-                        Utilized MongoDB to handle proxies and customer orders
-                        on an online storefront made with React Redux and
-                        Stripe.
+                        Developed a scalable backend for a proxy service
+                        handling 10,000+ IPs, serving 100+ users monthly.
                       </li>
                       <li>
-                        Acquired IP addresses from multiple international
-                        providers, ensuring a diverse pool of proxies from
-                        around the world and minimizing service downtime
+                        Processed high-volume traffic with Redis & REST APIs;
+                        used Bash scripts to concurrently validate user limits.
                       </li>
                       <li>
-                        Implemented a user-friendly web interface using HTML,
-                        CSS, and JavaScript, allowing clients to manage their
-                        subscriptions and access their proxy credentials.
+                        Engineered a user & employee dashboard with NodeJS,
+                        Websockets, MongoDB, Oauth2, HTML, CSS, & Chart.js.,
+                        allowing employees to validate orders and set stock, and
+                        clients to manage their subscriptions and access their
+                        proxy credentials.
+                      </li>
+                      <li>
+                        Achieved a 99.9% system uptime, displaying expertise in
+                        high-reliability & optimizing resource allocation.
                       </li>
                       <li>
                         Managed business aspects, including marketing, sales,
                         and customer support, leading to a growing client base
                         and positive feedback
-                      </li>
-                      <li>
-                        Ensured legal compliance with data privacy regulations
-                        and usage policies, protecting both clients and the
-                        company.
                       </li>
                     </div>
                   </h6>
