@@ -53,6 +53,56 @@ export default function Work() {
         >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12 '>
             <div className='mt-16 flex w-full flex-col'>
+              {/* MICHELIN PANE */}
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    href='https://ddi.michelin.com/en/our-expertise/'
+                  >
+                    Michelin
+                  </UnderlineLink>
+                  <br />
+                  <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-2xl'>
+                    <div>SWE Intern</div>
+                    <div>May 2023 - August 2023</div>
+                  </h1>
+                </div>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
+                  <h6>
+                    Interned on the Data Analytics and ML department, deploying
+                    tools and features for other teams at Michelin.
+                    <div className='ml-6'>
+                      <li>
+                        Helped enable non-SQL searches on the Corporate Data
+                        Lake by optimizing a GPT/Elasticsearch-based data
+                        processor and integrating an Angular Chatbot alongside 2
+                        AI/ML engineers, used by 100+ employees daily.
+                      </li>
+                      <li>
+                        Placed 2nd/107 teams in an AI/ML hackathon, utilizing
+                        PyTorch & Snowflake for predictive modeling.
+                      </li>
+                      <li>
+                        Built a prediction feature in an inventory app using
+                        Regression Models, NumPy, Pandas, MySQL, & Spark.
+                      </li>
+                      <li>
+                        Converted a Power BI app to a custom analytics app using
+                        Angular, Hadoop, Chart.js, & Integration Testing.
+                      </li>
+                    </div>
+                  </h6>
+                  <div className='flex w-full justify-end'>
+                    <ArrowLink
+                      className='text-sm'
+                      href='https://ddi.michelin.com/en/our-expertise/'
+                    >
+                      Learn More
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
               {/* SELLERCHAIN PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
@@ -64,11 +114,11 @@ export default function Work() {
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-2xl'>
-                    <div>Fullstack Developer Intern</div>
+                    <div>SWE Intern</div>
                     <div>June 2022 - August 2022</div>
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Helped revamp existing and new applications into modern,
                     scalable projects to merchants and developer partners.
@@ -144,7 +194,7 @@ export default function Work() {
                     <div>January 2021 - August 2021</div>
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Founded and developed a startup offering a scalable and
                     high-performance proxy service for web scraping, SEO tools,
@@ -202,7 +252,7 @@ export default function Work() {
                     <div>January 2021 - September 2021</div>
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Consulted for a leading software trading and cryptocurrency
                     advisory firm, providing expert guidance to clients on

@@ -70,10 +70,10 @@ export default function Education() {
                   <br />
                   <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-3xl'>
                     <div>BS in Computer Science</div>
-                    <div>August 2021 - December 2024</div>
+                    <div>August 2021 - May 2025</div>
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Courses taken during my time at the University of Maryland -
                     College Park:
@@ -98,6 +98,49 @@ export default function Education() {
                   </h6>
                 </div>
               </div>
+              {/* AKPSI PANE */}
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <h1 className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert min-[470px]:hidden sm:text-5xl'>
+                    Alpha Kappa Psi Professional Fraternity
+                  </h1>
+                  <h1 className='leading-1 prose hidden text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert min-[470px]:inline sm:text-5xl'>
+                    AKPsi Professional Fraternity
+                  </h1>
+                  <br />
+                  <h1 className='prose prose-xl mt-2 text-xl dark:prose-invert md:text-3xl'>
+                    <div>Technology Chair</div>
+                    <div>November 2022 - May 2023</div>
+                  </h1>
+                </div>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
+                  <h6>
+                    <div className='ml-6'>
+                      <li>
+                        Built a dashboard & algorithm to optimize engagement
+                        using Scikit-learn, Pandas, Angular Material, &
+                        Chart.js.
+                      </li>
+                      <li>
+                        Led 18 discussions on current tech events, summarizing
+                        recent papers, and analyzing tech company decisions.
+                      </li>
+                      <li>
+                        Created a lifetime member database using Python, Django,
+                        & PostGreSQL for alumni tracking & analysis.
+                      </li>
+                    </div>
+                  </h6>
+                  {/* <div className='flex w-full justify-end'>
+                    <ArrowLink
+                      className='text-sm'
+                      href='https://www.jasdeepahluwalia.com/experience/proxyfarm'
+                    >
+                      Learn More
+                    </ArrowLink>
+                  </div> */}
+                </div>
+              </div>
               {/* BigTh!nk AI PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
@@ -112,7 +155,7 @@ export default function Education() {
                     August 2022 - Current
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Engineered a machine learning based CNN to
                     detect/distinguish between malicious malaria strains/cells
@@ -165,7 +208,7 @@ export default function Education() {
                     Sept 2020 - Jan 2021
                   </h1>
                 </div>
-                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:w-2/5 md:pt-12 md:prose-xl lg:prose-2xl'>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
                     Modeled systems using engineering principles to solve
                     biological, physiological, and/or medical design problems
