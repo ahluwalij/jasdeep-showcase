@@ -8,7 +8,7 @@ Welcome to my personal portfolio project! This modern, interactive showcase is b
 - [**React**](https://reactjs.org/) - A popular JavaScript library for building user interfaces.
 - [**Tailwind CSS**](https://tailwindcss.com/) - A highly customizable and low-level CSS framework that allows for rapid UI development.
 - [**Three.js**](https://threejs.org/) - A powerful 3D library that enables the creation of complex 3D graphics, animations, and interactions for the web.
-- [**Three.js**](https://jestjs.io/) - An open-source Javascript testing framework developed by Facebook primarily focusing on simplicity and support for large web applications. Many large companies—including Twitter, Instagram, Pinterest, and Airbnb—use Jest for React testing.
+- [**Jest.js**](https://jestjs.io/) - An open-source Javascript testing framework developed by Facebook primarily focusing on simplicity and support for large web applications. Many large companies—including Twitter, Instagram, Pinterest, and Airbnb—use Jest for React testing.
 
 ## Key Features
 
