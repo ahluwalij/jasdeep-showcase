@@ -1,33 +1,29 @@
-import { Worker } from '@react-pdf-viewer/core';
-import { Viewer } from '@react-pdf-viewer/core';
-import * as React from 'react';
-
-import '@react-pdf-viewer/core/lib/styles/index.css';
+import React from 'react';
 
 import ButtonLink from '@/components/links/ButtonLink';
 import Seo from '@/components/Seo';
 
-<Viewer fileUrl='../assets/Jasdeep_Ahluwalia_Resume.pdf' />;
-
 export default function Resume() {
   return (
-    <main>
+    <main className='flex h-screen flex-col'>
       <Seo templateTitle='Resume' />
-      <header className='fixed top-0 z-10 w-full bg-transparent'>
-        <div className='flex h-14 items-center justify-end pr-4'>
-          <nav>
-            <ul className='flex items-center justify-between space-x-4'>
-              <ButtonLink variant='dark' href='/'>
-                Home
-              </ButtonLink>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div className='bg-white py-10'>
-        <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
-          <Viewer fileUrl='../assets/Jasdeep_Ahluwalia_Resume.pdf' />
-        </Worker>
+      <div className='absolute hidden items-center justify-end bg-transparent pr-4 sm:right-[6.25rem] sm:top-[0.8rem] sm:flex md:right-28 md:top-[0.625rem]'>
+        <nav>
+          <ul className='flex items-center justify-between space-x-4'>
+            <ButtonLink variant='dark' href='/'>
+              Home
+            </ButtonLink>
+          </ul>
+        </nav>
+      </div>
+      <div className='flex-grow bg-white'>
+        <iframe
+          src='../assets/Jasdeep_Ahluwalia_Resume.pdf'
+          width='100%'
+          height='100%'
+          title='Resume PDF'
+          className='h-full w-full'
+        />
       </div>
     </main>
   );
