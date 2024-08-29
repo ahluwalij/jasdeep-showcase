@@ -16,12 +16,13 @@ export default function Header() {
 
   return (
     <header className='fixed top-0 z-10 w-full bg-transparent'>
-      <div className='flex h-14 items-center justify-between px-8'>
-        <ul className='hidden w-full items-center justify-start space-x-4 md:flex'>
+      <div className='flex h-14 items-center justify-end px-8'>
+        {/* Navigation Links - Visible on larger screens */}
+        <ul className='hidden w-full items-center justify-end space-x-4 md:flex'>
           <PrimaryLink
             className={clsx(
-              'hidden dark:text-[#FAD5A5]',
-              router.pathname != '/' ? 'block' : ''
+              'dark:text-[#FAD5A5]',
+              router.pathname !== '/' && 'block'
             )}
             href='/'
           >
@@ -29,8 +30,8 @@ export default function Header() {
           </PrimaryLink>
           <PrimaryLink
             className={clsx(
-              'hidden dark:text-[#FAD5A5]',
-              router.pathname != '/work' ? 'block' : ''
+              'dark:text-[#FAD5A5]',
+              router.pathname !== '/work' && 'block'
             )}
             href='/work'
           >
@@ -38,8 +39,8 @@ export default function Header() {
           </PrimaryLink>
           <PrimaryLink
             className={clsx(
-              'hidden dark:text-[#FAD5A5]',
-              router.pathname != '/education' ? 'block' : ''
+              'dark:text-[#FAD5A5]',
+              router.pathname !== '/education' && 'block'
             )}
             href='/education'
           >
@@ -47,8 +48,8 @@ export default function Header() {
           </PrimaryLink>
           <PrimaryLink
             className={clsx(
-              'hidden dark:text-[#FAD5A5]',
-              router.pathname != '/projects' ? 'block' : ''
+              'dark:text-[#FAD5A5]',
+              router.pathname !== '/projects' && 'block'
             )}
             href='/projects'
           >
@@ -56,8 +57,8 @@ export default function Header() {
           </PrimaryLink>
           <PrimaryLink
             className={clsx(
-              'hidden dark:text-[#FAD5A5]',
-              router.pathname != '/aiml' ? 'block' : ''
+              'dark:text-[#FAD5A5]',
+              router.pathname !== '/aiml' && 'block'
             )}
             href='/aiml'
           >
@@ -83,7 +84,7 @@ export default function Header() {
             {/* Navigation Links */}
             <PrimaryLink
               className={`dark:text-[#FAD5A5] ${
-                router.pathname != '/' ? 'block' : ''
+                router.pathname !== '/' ? 'block' : ''
               }`}
               href='/'
             >
@@ -91,7 +92,7 @@ export default function Header() {
             </PrimaryLink>
             <PrimaryLink
               className={`dark:text-[#FAD5A5] ${
-                router.pathname != '/work' ? 'block' : ''
+                router.pathname !== '/work' ? 'block' : ''
               }`}
               href='/work'
             >
@@ -99,7 +100,7 @@ export default function Header() {
             </PrimaryLink>
             <PrimaryLink
               className={`dark:text-[#FAD5A5] ${
-                router.pathname != '/education' ? 'block' : ''
+                router.pathname !== '/education' ? 'block' : ''
               }`}
               href='/education'
             >
@@ -107,7 +108,7 @@ export default function Header() {
             </PrimaryLink>
             <PrimaryLink
               className={`dark:text-[#FAD5A5] ${
-                router.pathname != '/projects' ? 'block' : ''
+                router.pathname !== '/projects' ? 'block' : ''
               }`}
               href='/projects'
             >
@@ -115,7 +116,7 @@ export default function Header() {
             </PrimaryLink>
             <PrimaryLink
               className={`dark:text-[#FAD5A5] ${
-                router.pathname != '/aiml' ? 'block' : ''
+                router.pathname !== '/aiml' ? 'block' : ''
               }`}
               href='/aiml'
             >
