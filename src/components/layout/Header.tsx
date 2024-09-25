@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 import { useState } from 'react';
@@ -14,56 +13,31 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
 
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/work', label: 'Work' },
+    { href: '/education', label: 'Education' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/aiml', label: 'AI/ML' },
+  ];
+
   return (
     <header className='fixed top-0 z-10 w-full bg-transparent'>
       <div className='flex h-14 items-center justify-end px-8'>
         {/* Navigation Links - Visible on larger screens */}
         <ul className='hidden w-full items-center justify-end space-x-4 md:flex'>
-          <PrimaryLink
-            className={clsx(
-              'dark:text-[#FAD5A5]',
-              router.pathname !== '/' && 'block'
-            )}
-            href='/'
-          >
-            Home
-          </PrimaryLink>
-          <PrimaryLink
-            className={clsx(
-              'dark:text-[#FAD5A5]',
-              router.pathname !== '/work' && 'block'
-            )}
-            href='/work'
-          >
-            Work
-          </PrimaryLink>
-          <PrimaryLink
-            className={clsx(
-              'dark:text-[#FAD5A5]',
-              router.pathname !== '/education' && 'block'
-            )}
-            href='/education'
-          >
-            Education
-          </PrimaryLink>
-          <PrimaryLink
-            className={clsx(
-              'dark:text-[#FAD5A5]',
-              router.pathname !== '/projects' && 'block'
-            )}
-            href='/projects'
-          >
-            Projects
-          </PrimaryLink>
-          <PrimaryLink
-            className={clsx(
-              'dark:text-[#FAD5A5]',
-              router.pathname !== '/aiml' && 'block'
-            )}
-            href='/aiml'
-          >
-            AI/ML
-          </PrimaryLink>
+          {navLinks.map(
+            (link) =>
+              router.pathname !== link.href && (
+                <PrimaryLink
+                  key={link.href}
+                  className='dark:text-[#FAD5A5]'
+                  href={link.href}
+                >
+                  {link.label}
+                </PrimaryLink>
+              )
+          )}
           <DarkModeButton />
         </ul>
         {/* Hamburger Icon */}
@@ -82,46 +56,18 @@ export default function Header() {
         >
           <ul className='flex h-screen w-full flex-col items-center justify-center space-y-4 md:h-auto md:flex-row md:space-x-4 md:space-y-0'>
             {/* Navigation Links */}
-            <PrimaryLink
-              className={`dark:text-[#FAD5A5] ${
-                router.pathname !== '/' ? 'block' : ''
-              }`}
-              href='/'
-            >
-              Home
-            </PrimaryLink>
-            <PrimaryLink
-              className={`dark:text-[#FAD5A5] ${
-                router.pathname !== '/work' ? 'block' : ''
-              }`}
-              href='/work'
-            >
-              Work
-            </PrimaryLink>
-            <PrimaryLink
-              className={`dark:text-[#FAD5A5] ${
-                router.pathname !== '/education' ? 'block' : ''
-              }`}
-              href='/education'
-            >
-              Education
-            </PrimaryLink>
-            <PrimaryLink
-              className={`dark:text-[#FAD5A5] ${
-                router.pathname !== '/projects' ? 'block' : ''
-              }`}
-              href='/projects'
-            >
-              Projects
-            </PrimaryLink>
-            <PrimaryLink
-              className={`dark:text-[#FAD5A5] ${
-                router.pathname !== '/aiml' ? 'block' : ''
-              }`}
-              href='/aiml'
-            >
-              AI/ML
-            </PrimaryLink>
+            {navLinks.map(
+              (link) =>
+                router.pathname !== link.href && (
+                  <PrimaryLink
+                    key={link.href}
+                    className='dark:text-[#FAD5A5]'
+                    href={link.href}
+                  >
+                    {link.label}
+                  </PrimaryLink>
+                )
+            )}
             <DarkModeButton />
           </ul>
         </nav>
