@@ -56,10 +56,16 @@ export default function Work() {
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
                   <UnderlineLink
-                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
-                    href='https://ddi.michelin.com/en/our-expertise/'
+                    className='leading-1 prose w-fit text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl xl:hidden'
+                    href='https://aws.amazon.com/'
                   >
                     AWS
+                  </UnderlineLink>
+                  <UnderlineLink
+                    className='leading-1 prose hidden w-fit whitespace-nowrap text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl xl:inline'
+                    href='https://aws.amazon.com/'
+                  >
+                    Amazon Web Services
                   </UnderlineLink>
                   <br />
                   <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-2xl'>
