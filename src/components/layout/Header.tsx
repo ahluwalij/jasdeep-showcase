@@ -17,8 +17,8 @@ export default function Header() {
     { href: '/', label: 'Home' },
     { href: '/work', label: 'Work' },
     { href: '/education', label: 'Education' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/aiml', label: 'AI/ML' },
+    // { href: '/projects', label: 'Projects' },
+    // { href: '/aiml', label: 'AI/ML' },
   ];
 
   return (

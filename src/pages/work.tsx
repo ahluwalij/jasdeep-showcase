@@ -53,6 +53,36 @@ export default function Work() {
         >
           <div className='layout relative flex min-h-screen flex-col items-start justify-start pt-6 text-center sm:pt-8 md:pt-10 lg:pt-12 '>
             <div className='mt-16 flex w-full flex-col'>
+              <div className='pane'>
+                <div className='w-5/6 pt-12 text-left md:w-2/5'>
+                  <UnderlineLink
+                    className='leading-1 prose text-left text-[2.5rem] font-semibold leading-10 dark:prose-invert sm:text-5xl'
+                    href='https://ddi.michelin.com/en/our-expertise/'
+                  >
+                    AWS
+                  </UnderlineLink>
+                  <br />
+                  <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-2xl'>
+                    <div>SWE Intern</div>
+                    <div>May 2024 - August 2024</div>
+                  </h1>
+                </div>
+                <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
+                  <h6>
+                    Optimized reconnection protocols and built the foundation of
+                    a paid, customer-facing analytics service under the AWS
+                    Systems organization.
+                  </h6>
+                  <div className='flex w-full justify-end'>
+                    <ArrowLink
+                      className='text-sm'
+                      href='https://aws.amazon.com/systems-manager//'
+                    >
+                      Learn More
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
               {/* MICHELIN PANE */}
               <div className='pane'>
                 <div className='w-5/6 pt-12 text-left md:w-2/5'>
@@ -70,9 +100,10 @@ export default function Work() {
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
                   <h6>
-                    Interned on the Data Analytics and ML department, deploying
-                    tools and features for other teams at Michelin.
-                    <div className='ml-6'>
+                    Enterprise Database and the Data Analytics teams, optimizing
+                    database queries and request handling for other
+                    organizations at Michelin.
+                    {/* <div className='ml-6'>
                       <li>
                         Helped enable non-SQL searches on the Corporate Data
                         Lake by optimizing a GPT/Elasticsearch-based data
@@ -91,7 +122,7 @@ export default function Work() {
                         Converted a Power BI app to a custom analytics app using
                         Angular, Hadoop, Chart.js, & Integration Testing.
                       </li>
-                    </div>
+                    </div> */}
                   </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
@@ -122,7 +153,7 @@ export default function Work() {
                   <h6>
                     Helped revamp existing and new applications into modern,
                     scalable projects for Amazon merchants and developers.
-                    <div className='ml-6'>
+                    {/* <div className='ml-6'>
                       <li>
                         Proposed and optimized an ML algorithm for Amazon
                         shipments, and integrated it into current backend
@@ -165,7 +196,7 @@ export default function Work() {
                         retrospec- tives, ensuring seamless team collaboration
                         and timely project completion
                       </li>
-                    </div>
+                    </div> */}
                   </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
@@ -196,8 +227,9 @@ export default function Work() {
                   <h6>
                     Founded and developed a startup offering a scalable and
                     high-performance proxy service for web scraping, SEO tools,
-                    and secure browsing.
-                    <div className='ml-6'>
+                    and secure browsing (10,000+ IPs, serving 100+ users
+                    monthly).
+                    {/* <div className='ml-6'>
                       <li>
                         Developed a scalable backend for a proxy service
                         handling 10,000+ IPs, serving 100+ users monthly.
@@ -222,12 +254,12 @@ export default function Work() {
                         and customer support, leading to a growing client base
                         and positive feedback
                       </li>
-                    </div>
+                    </div> */}
                   </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
                       className='text-sm'
-                      href='https://www.jasdeepahluwalia.com/experience/proxyfarm'
+                      href='https://proxy-farm.com/'
                     >
                       Learn More
                     </ArrowLink>
@@ -254,7 +286,7 @@ export default function Work() {
                     Consulted for a leading software trading and cryptocurrency
                     advisory firm, providing expert guidance to clients on
                     investment strategies, market trends, and risk management.
-                    <div className='ml-6'>
+                    {/* <div className='ml-6'>
                       <li>
                         Assessed client needs and delivered strategic investment
                         recommendations for development company ventures,
@@ -273,7 +305,7 @@ export default function Work() {
                         long-term business growth through collaboration and
                         resource sharing.
                       </li>
-                    </div>
+                    </div> */}
                   </h6>
                   <div className='flex w-full justify-end'>
                     <ArrowLink
