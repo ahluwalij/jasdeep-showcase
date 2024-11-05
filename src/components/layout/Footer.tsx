@@ -31,7 +31,7 @@ export default function Footer() {
           </UnderlineLink>
         </div> */}
         <div>
-          <UnderlineLink href='/files/resume'>Resume</UnderlineLink>
+          {/* <UnderlineLink href='/files/resume'>Resume</UnderlineLink> */}
         </div>
       </div>
     </footer>
