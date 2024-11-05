@@ -7,13 +7,7 @@ export default function Footer() {
     <footer className='flex h-14 w-full items-center'>
       <div className='flex w-full justify-center gap-4 leading-4'>
         <div className='hidden sm:flex'>
-          © {new Date().getFullYear()} By{' '}
-          <UnderlineLink
-            className='ml-1'
-            href='https://www.linkedin.com/in/jasdeep-ahluwalia/'
-          >
-            Jasdeep Ahluwalia
-          </UnderlineLink>
+          © {new Date().getFullYear()} By Jasdeep Ahluwalia{' '}
         </div>
         <div>
           <UnderlineLink href='https://www.linkedin.com/in/jasdeep-ahluwalia/'>

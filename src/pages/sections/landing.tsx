@@ -4,8 +4,6 @@ import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 
 import Footer from '@/components/layout/Footer';
-import ArrowLink from '@/components/links/ArrowLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
 export default function Landing() {
@@ -63,7 +61,10 @@ export default function Landing() {
                 <div>Ahluwalia</div>
                 <div className='text-md flex flex-col items-start gap-1 text-left md:text-lg'>
                   <div className='flex flex-col gap-1 lg:flex-row'>
-                    <h3>How did I make this?</h3>
+                    <h3>
+                      Backend New Grad Dev from The University of Maryland.
+                    </h3>
+                    {/* <h3>How did I make this?</h3>
                     <h3>
                       Check out the{' '}
                       <UnderlineLink
@@ -79,7 +80,7 @@ export default function Landing() {
                       >
                         GitHub
                       </ArrowLink>
-                    </h3>
+                    </h3> */}
                   </div>
                   {/* <h3 className='flex flex-wrap gap-1'>
                     With
