@@ -12,7 +12,7 @@ export default function Footer() {
             className='ml-1'
             href='https://www.linkedin.com/in/jasdeep-ahluwalia/'
           >
-            Jasdeep Ahluwalia.
+            Jasdeep Ahluwalia
           </UnderlineLink>
         </div>
         <div>
