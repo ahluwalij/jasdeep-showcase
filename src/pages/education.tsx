@@ -70,7 +70,7 @@ export default function Education() {
                   <br />
                   <h1 className='prose prose-xl mt-4 flex flex-col text-xl dark:prose-invert md:text-3xl'>
                     <div>BS in Computer Science</div>
-                    <div>August 2022 - May 2026</div>
+                    <div>August 2021 - May 2026</div>
                   </h1>
                 </div>
                 <div className='prose prose-lg w-5/6 pt-2 text-left tracking-tight dark:prose-invert md:prose-xl lg:prose-2xl md:w-2/5 md:pt-12'>
